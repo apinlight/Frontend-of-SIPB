@@ -22,8 +22,13 @@ const router = createRouter({
       path: '/apiTest',
       name: 'apiTest',
       component: ApiTest
+    },
+    {
+      path: '/mainp',
+      name: 'mainp',
+      component: () => import('../components/MainPage.vue')
     }
-  ],
+  ]
 })
 
 export default router
